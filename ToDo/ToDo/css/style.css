@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 450px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#todo-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#taskInput {
+    padding: 8px;
+}
+
+#addBtn {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+li span {
+    cursor: pointer;
+}
+
+/* Tareas completadas */
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Botón para eliminar */
+.deleteBtn {
+    color: red;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
